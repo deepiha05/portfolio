@@ -10,7 +10,6 @@ export const profile = {
   github: "https://github.com/deepiha05",
   linkedin: "https://www.linkedin.com/in/deepiha-s/",
   email: "deepihas@uci.edu",
-  phone: "+1-425-457-6462",
 }
 
 export const journey = [
