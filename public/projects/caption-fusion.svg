@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="640" fill="#0f172a"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5eead4"/></marker></defs>
+  <g stroke="#5eead4" stroke-width="4" fill="none" marker-end="url(#a)">
+    <path d="M190 320 L250 320 L250 200 L300 200"/>
+    <path d="M250 320 L250 440 L300 440"/>
+    <path d="M470 200 L530 200"/>
+    <path d="M700 200 L740 200 L740 290"/>
+    <path d="M470 440 L740 440 L740 360"/>
+    <path d="M820 325 L860 325"/>
+  </g>
+  <rect x="50" y="250" width="140" height="140" rx="16" fill="#f8fafc"/>
+  <circle cx="100" cy="300" r="20" fill="#fbbf24"/><path d="M65 375 L115 320 L150 355 L175 330 L175 375z" fill="#14b8a6"/>
+  <g font-size="28" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    <rect x="300" y="160" width="170" height="80" rx="14" fill="#5eead4"/><text x="385" y="210">BLIP-2</text>
+    <rect x="530" y="160" width="170" height="80" rx="14" fill="#5eead4"/><text x="615" y="210">BERT</text>
+    <rect x="300" y="400" width="170" height="80" rx="14" fill="#5eead4"/><text x="385" y="450">ViT</text>
+    <rect x="670" y="290" width="150" height="70" rx="14" fill="#f8fafc"/><text x="745" y="335">Fuse</text>
+  </g>
+  <rect x="860" y="285" width="110" height="80" rx="14" fill="#14b8a6"/>
+  <text x="915" y="335" font-size="26" font-weight="bold" fill="#0f172a" text-anchor="middle">SVM</text>
+  <text x="385" y="135" font-size="22" fill="#94a3b8" text-anchor="middle">caption</text>
+  <text x="615" y="135" font-size="22" fill="#94a3b8" text-anchor="middle">caption encoding</text>
+  <text x="385" y="515" font-size="22" fill="#94a3b8" text-anchor="middle">image encoding</text>
+  <text x="500" y="590" font-size="26" fill="#e2e8f0" text-anchor="middle">96.5% on Caltech-101</text>
+</svg>

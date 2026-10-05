@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="640" fill="#0f172a"/>
+  <rect x="50" y="80" width="400" height="200" rx="16" fill="#1e293b"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="24" fill="#e2e8f0">
+    <text x="80" y="135"><tspan fill="#5eead4">int</tspan> fact(<tspan fill="#5eead4">int</tspan> n) {</text>
+    <text x="110" y="180"><tspan fill="#5eead4">if</tspan> (n &lt;= 1) <tspan fill="#5eead4">return</tspan> 1;</text>
+    <text x="110" y="225"><tspan fill="#5eead4">return</tspan> n * fact(n-1);</text>
+    <text x="80" y="265">}</text>
+  </g>
+  <rect x="550" y="80" width="400" height="200" rx="16" fill="#1e293b"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="22" fill="#e2e8f0">
+    <text x="580" y="130">pushq %rbp</text>
+    <text x="580" y="170">movq  %rsp, %rbp</text>
+    <text x="580" y="210">cmpl  $1, -20(%rbp)</text>
+    <text x="580" y="250">call  fact</text>
+  </g>
+  <g font-size="24" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    <rect x="50" y="400" width="190" height="80" rx="14" fill="#5eead4"/><text x="145" y="450">Lexer</text>
+    <rect x="290" y="400" width="190" height="80" rx="14" fill="#5eead4"/><text x="385" y="450">Parser</text>
+    <rect x="530" y="400" width="190" height="80" rx="14" fill="#5eead4"/><text x="625" y="448" font-size="21">3-address code</text>
+    <rect x="770" y="400" width="180" height="80" rx="14" fill="#14b8a6"/><text x="860" y="450">x86-64</text>
+  </g>
+  <g fill="#5eead4"><path d="M245 428 L283 440 L245 452z"/><path d="M485 428 L523 440 L485 452z"/><path d="M725 428 L763 440 L725 452z"/></g>
+  <text x="145" y="525" font-size="20" fill="#94a3b8" text-anchor="middle">flex</text>
+  <text x="385" y="525" font-size="20" fill="#94a3b8" text-anchor="middle">bison</text>
+  <text x="625" y="525" font-size="20" fill="#94a3b8" text-anchor="middle">quads, symbol tables</text>
+  <text x="860" y="525" font-size="20" fill="#94a3b8" text-anchor="middle">assembly</text>
+</svg>
