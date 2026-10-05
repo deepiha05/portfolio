@@ -12,7 +12,6 @@ const NAV_ITEMS = [
   { label: "Research", page: "research" },
   { label: "Projects", page: "projects" },
   { label: "Skills", page: "skills" },
-  { label: "Contact", page: "contact" },
 ]
 
 export default function Navbar() {

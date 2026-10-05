@@ -9,7 +9,6 @@ export const profile = {
   resume: null as string | null,
   github: "https://github.com/deepiha05",
   linkedin: "https://www.linkedin.com/in/deepiha-s/",
-  email: "deepihas@uci.edu",
 }
 
 export const journey = [
