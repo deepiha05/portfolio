@@ -5,8 +5,8 @@ export const profile = {
   firstName: "Deepiha",
   // Image in public/; set to null to show initials instead
   headshot: "/headshot.jpg" as string | null,
-  // Set to "/resume.pdf" after adding the file to public/
-  resume: null as string | null,
+  // PDF in public/; set to null to hide the Resume button
+  resume: "/resume.pdf" as string | null,
   github: "https://github.com/deepiha05",
   linkedin: "https://www.linkedin.com/in/deepiha-s/",
 }
@@ -148,7 +148,7 @@ export const skills = [
   },
   {
     group: "Systems",
-    items: ["Embedded Linux", "Computer Architecture", "x86-64 Assembly", "Linux System Calls", "Performance Optimization"],
+    items: ["Embedded Linux", "Computer Architecture", "x86-64 Assembly", "Linux System Calls", "Kernel Development"],
   },
   {
     group: "Backend/Data",

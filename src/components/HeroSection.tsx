@@ -45,8 +45,7 @@ export default function HeroSection() {
             {profile.resume && (
               <a
                 href={profile.resume}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Resume_Deepiha_Sivakumar.pdf"
                 className={`${buttonClass} text-neutral-100 bg-teal-600 hover:bg-teal-700`}
               >
                 <FaDownload className="mr-2" /> Resume

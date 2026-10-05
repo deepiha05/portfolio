@@ -6,8 +6,8 @@ My personal site: experience, research, projects and skills. Built with Next.js 
 
 All text lives in [`src/data/profile.ts`](src/data/profile.ts): the journey timeline, experience, research, projects, skills, awards and links. Wrap words in `**double asterisks**` to bold them.
 
-- **Headshot:** add the image to `public/` (e.g. `public/headshot.jpg`) and set `headshot: "/headshot.jpg"`. Until then the hero shows initials.
-- **Resume:** add `public/resume.pdf` and set `resume: "/resume.pdf"`. The Resume button appears once it is set.
+- **Headshot:** replace `public/headshot.jpg`; set `headshot: null` to show initials instead.
+- **Resume:** replace `public/resume.pdf` to update it; set `resume: null` to hide the button.
 - **Project images:** the diagrams in `public/projects/` are SVGs; replace them with screenshots if you like.
 
 ## Running locally
