@@ -12,9 +12,9 @@ export default function Home() {
       <HeroSection />
       <JourneySection />
       <ExperienceSection />
+      <SkillsSection />
       <ProjectsSection id="research" title="Research" items={research} />
       <ProjectsSection id="projects" title="Projects" items={projects} />
-      <SkillsSection />
       <AwardsSection />
     </main>
   )

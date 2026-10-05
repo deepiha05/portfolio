@@ -9,9 +9,9 @@ import { profile } from "@/data/profile"
 const NAV_ITEMS = [
   { label: "Journey", page: "journey" },
   { label: "Experience", page: "experience" },
+  { label: "Skills", page: "skills" },
   { label: "Research", page: "research" },
   { label: "Projects", page: "projects" },
-  { label: "Skills", page: "skills" },
 ]
 
 export default function Navbar() {
