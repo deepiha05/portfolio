@@ -100,14 +100,14 @@ export const research: Project[] = [
 
 export const projects: Project[] = [
   {
-    name: "MyTCP: Message-Oriented TCP",
-    meta: "Computer Networks · IIT Kharagpur · Mar – Apr 2023",
+    name: "RVL-CDIP Document Image Classification",
+    meta: "Information Retrieval · IIT Kharagpur · Aug – Nov 2022",
     description:
-      "A message-oriented protocol in **C** on top of TCP, with wrappers for the standard socket calls so that every send delivers one whole message, reliably and in order. Uses **length-prefixed message framing** and separate **send and receive threads** for concurrent, asynchronous communication.",
-    image: "/projects/mytcp.svg",
-    imageAlt: "Diagram of length-prefixed messages flowing between a sender thread and a receiver thread",
-    tags: ["C", "Sockets", "pthreads", "Networking"],
-    links: [{ label: "GitHub", href: "https://github.com/deepiha05/mytcp-network-programming" }],
+      "Classified grayscale document images into **16** classes with MobileNet, EfficientNet, DenseNet, ResNet, Vision Transformer, LSTM, few-shot learning and ensembles. An ensemble combining **CNNs and Transformers** reached **77.0%** test accuracy.",
+    image: "/projects/rvl-cdip.svg",
+    imageAlt: "Document thumbnails labelled letter, invoice, form and resume",
+    tags: ["TensorFlow", "CNNs", "Transformers", "Ensembles"],
+    links: [{ label: "GitHub", href: "https://github.com/deepiha05/rvl-cdip-document-classification" }],
   },
   {
     name: "TinyC Compiler",
@@ -120,6 +120,16 @@ export const projects: Project[] = [
     links: [{ label: "GitHub", href: "https://github.com/deepiha05/tinyC-compiler" }],
   },
   {
+    name: "MyTCP: Message-Oriented TCP",
+    meta: "Computer Networks · IIT Kharagpur · Mar – Apr 2023",
+    description:
+      "A message-oriented protocol in **C** on top of TCP, with wrappers for the standard socket calls so that every send delivers one whole message, reliably and in order. Uses **length-prefixed message framing** and separate **send and receive threads** for concurrent, asynchronous communication.",
+    image: "/projects/mytcp.svg",
+    imageAlt: "Diagram of length-prefixed messages flowing between a sender thread and a receiver thread",
+    tags: ["C", "Sockets", "pthreads", "Networking"],
+    links: [{ label: "GitHub", href: "https://github.com/deepiha05/mytcp-network-programming" }],
+  },
+  {
     name: "Oblivious Cross-Tags Searchable Encryption Server",
     meta: "Design Lab · IIT Kharagpur · Feb – Apr 2025",
     description:
@@ -128,16 +138,6 @@ export const projects: Project[] = [
     imageAlt: "Diagram of a client sending an encrypted search query to a server inside a virtual machine",
     tags: ["C++", "Cryptography", "Redis", "QEMU"],
     links: [{ label: "GitHub", href: "https://github.com/deepiha05/oxt-searchable-encryption" }],
-  },
-  {
-    name: "RVL-CDIP Document Image Classification",
-    meta: "Information Retrieval · IIT Kharagpur · Aug – Nov 2022",
-    description:
-      "Classified grayscale document images into **16** classes with MobileNet, EfficientNet, DenseNet, ResNet, Vision Transformer, LSTM, few-shot learning and ensembles. An ensemble combining **CNNs and Transformers** reached **77.0%** test accuracy.",
-    image: "/projects/rvl-cdip.svg",
-    imageAlt: "Document thumbnails labelled letter, invoice, form and resume",
-    tags: ["TensorFlow", "CNNs", "Transformers", "Ensembles"],
-    links: [{ label: "GitHub", href: "https://github.com/deepiha05/rvl-cdip-document-classification" }],
   },
 ]
 
