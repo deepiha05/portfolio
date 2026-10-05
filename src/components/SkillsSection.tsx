@@ -4,7 +4,7 @@ import { skills } from "@/data/profile"
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="my-12 pb-12 md:pt-16 md:pb-24">
+    <section id="skills" className="my-12 pb-12 md:pt-16">
       <SectionHeading>Skills</SectionHeading>
       <div className="space-y-10 md:space-y-6 md:p-4">
         {skills.map((group) => (

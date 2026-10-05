@@ -3,6 +3,7 @@ import JourneySection from "@/components/JourneySection"
 import ExperienceSection from "@/components/ExperienceSection"
 import ProjectsSection from "@/components/ProjectsSection"
 import SkillsSection from "@/components/SkillsSection"
+import AwardsSection from "@/components/AwardsSection"
 import { research, projects } from "@/data/profile"
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <ProjectsSection id="research" title="Research" items={research} />
       <ProjectsSection id="projects" title="Projects" items={projects} />
       <SkillsSection />
+      <AwardsSection />
     </main>
   )
 }

@@ -3,8 +3,8 @@
 export const profile = {
   name: "Deepiha Sivakumar",
   firstName: "Deepiha",
-  // Set to e.g. "/headshot.jpg" after adding the file to public/
-  headshot: null as string | null,
+  // Image in public/; set to null to show initials instead
+  headshot: "/headshot.jpg" as string | null,
   // Set to "/resume.pdf" after adding the file to public/
   resume: null as string | null,
   github: "https://github.com/deepiha05",
@@ -159,5 +159,14 @@ export const skills = [
   {
     group: "Development",
     items: ["Typescript", "ReactJS", "NextJS", "REST API", "Web Sockets", "SSE", "GraphQL", "Claude Code", "Agent Skills"],
+  },
+]
+
+export const awards = [
+  {
+    title: "National Talent Search Examination (NTSE) Scholar",
+    year: "2018",
+    detail:
+      "Selected as one of the top **~2,000 students nationally** out of **1.5M+** applicants in one of India's most competitive, government-funded talent recognition programs.",
   },
 ]
