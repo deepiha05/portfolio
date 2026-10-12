@@ -98,26 +98,27 @@ export const research: Project[] = [
   },
 ]
 
+// Newest first
 export const projects: Project[] = [
   {
-    name: "RVL-CDIP Document Image Classification",
-    meta: "Information Retrieval · IIT Kharagpur · Aug – Nov 2022",
+    name: "Distributed Pub/Sub with Raft",
+    meta: "Distributed Systems · IIT Kharagpur · Feb – Apr 2025",
     description:
-      "Classified grayscale document images into **16** classes with MobileNet, EfficientNet, DenseNet, ResNet, Vision Transformer, LSTM, few-shot learning and ensembles. An ensemble combining **CNNs and Transformers** reached **77.0%** test accuracy.",
-    image: "/projects/rvl-cdip.svg",
-    imageAlt: "Document thumbnails labelled letter, invoice, form and resume",
-    tags: ["TensorFlow", "CNNs", "Transformers", "Ensembles"],
-    links: [{ label: "GitHub", href: "https://github.com/deepiha05/rvl-cdip-document-classification" }],
+      "A distributed publish-subscribe system in **Python (FastAPI)**. Brokers keep topics, subscriptions and consumer offsets consistent with **Raft consensus**: leader election, log replication and majority commit. Messages live in **partitioned append-only logs** replicated **3×** across storage nodes with **2-of-3 quorum writes**. Supports consumer groups, **at-least-once delivery** with acks and retries, and **dead-letter queues**, tested with node crashes and network partitions.",
+    image: "/projects/pubsub.svg",
+    imageAlt: "Diagram of a publisher and a subscriber talking to three Raft brokers, with partitions replicated across three storage nodes",
+    tags: ["Python", "FastAPI", "Raft", "Distributed Systems"],
+    links: [{ label: "GitHub", href: "https://github.com/deepiha05/distributed-pubsub-raft" }],
   },
   {
-    name: "TinyC Compiler",
-    meta: "Compilers Lab · IIT Kharagpur · Sep – Nov 2022",
+    name: "Oblivious Cross-Tags Searchable Encryption Server",
+    meta: "Design Lab · IIT Kharagpur · Feb – Apr 2025",
     description:
-      "A compiler for **TinyC**, a subset of C as defined in ISO/IEC 9899:1999, with a **lexer**, **parser**, machine-independent **intermediate code generator** and **target code generator** for x86-64.",
-    image: "/projects/tinyc.svg",
-    imageAlt: "Compiler pipeline: source code, lexer, parser, three-address code, x86-64 assembly",
-    tags: ["C++", "Flex", "Bison", "x86-64"],
-    links: [{ label: "GitHub", href: "https://github.com/deepiha05/tinyC-compiler" }],
+      "Separated the **TWINSSE** codebase into standalone **C++** client and server programs talking over **TCP**, with the server in a **QEMU** CentOS VM. Implemented setup and conjunctive search for the **OXT** protocol with encrypted index entries in **Redis** and a **Bloom filter**, plus a memory-analysis tool that diffs server memory snapshots before and after each query.",
+    image: "/projects/oxt.svg",
+    imageAlt: "Diagram of a client sending an encrypted search query to a server inside a virtual machine",
+    tags: ["C++", "Cryptography", "Redis", "QEMU"],
+    links: [{ label: "GitHub", href: "https://github.com/deepiha05/oxt-searchable-encryption" }],
   },
   {
     name: "MyTCP: Message-Oriented TCP",
@@ -130,14 +131,34 @@ export const projects: Project[] = [
     links: [{ label: "GitHub", href: "https://github.com/deepiha05/mytcp-network-programming" }],
   },
   {
-    name: "Oblivious Cross-Tags Searchable Encryption Server",
-    meta: "Design Lab · IIT Kharagpur · Feb – Apr 2025",
+    name: "Hospital Management System",
+    meta: "Database Management Systems · IIT Kharagpur · Feb – Mar 2023",
     description:
-      "Separated the **TWINSSE** codebase into standalone **C++** client and server programs talking over **TCP**, with the server in a **QEMU** CentOS VM. Implemented setup and conjunctive search for the **OXT** protocol with encrypted index entries in **Redis** and a **Bloom filter**, plus a memory-analysis tool that diffs server memory snapshots before and after each query.",
-    image: "/projects/oxt.svg",
-    imageAlt: "Diagram of a client sending an encrypted search query to a server inside a virtual machine",
-    tags: ["C++", "Cryptography", "Redis", "QEMU"],
-    links: [{ label: "GitHub", href: "https://github.com/deepiha05/oxt-searchable-encryption" }],
+      "A full-stack hospital web app built with **Django** and **SQLite**, with separate dashboards for admins, doctors, front desk and data entry staff. Covers patient records, tests, treatments and room availability, with **priority-based appointment booking** where emergencies replace clashing slots, **email notifications**, and a discharge workflow that produces the bill as a **PDF**.",
+    image: "/projects/hospital.svg",
+    imageAlt: "Mock appointments dashboard with one emergency booking, and buttons for the admin, doctor, front desk and data entry roles",
+    tags: ["Django", "Python", "SQLite", "JavaScript"],
+    links: [{ label: "GitHub", href: "https://github.com/deepiha05/HOSPITAL-MANAGEMENT-dbms" }],
+  },
+  {
+    name: "TinyC Compiler",
+    meta: "Compilers Lab · IIT Kharagpur · Sep – Nov 2022",
+    description:
+      "A compiler for **TinyC**, a subset of C as defined in ISO/IEC 9899:1999, with a **lexer**, **parser**, machine-independent **intermediate code generator** and **target code generator** for x86-64.",
+    image: "/projects/tinyc.svg",
+    imageAlt: "Compiler pipeline: source code, lexer, parser, three-address code, x86-64 assembly",
+    tags: ["C++", "Flex", "Bison", "x86-64"],
+    links: [{ label: "GitHub", href: "https://github.com/deepiha05/tinyC-compiler" }],
+  },
+  {
+    name: "RVL-CDIP Document Image Classification",
+    meta: "Information Retrieval · IIT Kharagpur · Aug – Nov 2022",
+    description:
+      "Classified grayscale document images into **16** classes with MobileNet, EfficientNet, DenseNet, ResNet, Vision Transformer, LSTM, few-shot learning and ensembles. An ensemble combining **CNNs and Transformers** reached **77.0%** test accuracy.",
+    image: "/projects/rvl-cdip.svg",
+    imageAlt: "Document thumbnails labelled letter, invoice, form and resume",
+    tags: ["TensorFlow", "CNNs", "Transformers", "Ensembles"],
+    links: [{ label: "GitHub", href: "https://github.com/deepiha05/rvl-cdip-document-classification" }],
   },
 ]
 

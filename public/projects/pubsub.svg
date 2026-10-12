@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="640" fill="#0f172a"/>
+  <g stroke="#5eead4" stroke-width="3" stroke-dasharray="8 6" fill="none">
+    <path d="M405 130 L595 130"/><path d="M385 160 L470 245"/><path d="M615 160 L530 245"/>
+  </g>
+  <text x="500" y="118" font-size="18" fill="#5eead4" text-anchor="middle">Raft</text>
+  <g font-weight="bold" text-anchor="middle">
+    <rect x="280" y="95" width="125" height="70" rx="14" fill="#14b8a6"/><text x="342" y="128" font-size="20" fill="#0f172a">Broker</text><text x="342" y="152" font-size="16" fill="#0f172a">leader</text>
+    <rect x="595" y="95" width="125" height="70" rx="14" fill="#1e293b" stroke="#5eead4" stroke-width="3"/><text x="657" y="128" font-size="20" fill="#f8fafc">Broker</text><text x="657" y="152" font-size="16" fill="#cbd5e1" font-weight="normal">follower</text>
+    <rect x="437" y="235" width="125" height="70" rx="14" fill="#1e293b" stroke="#5eead4" stroke-width="3"/><text x="500" y="268" font-size="20" fill="#f8fafc">Broker</text><text x="500" y="292" font-size="16" fill="#cbd5e1" font-weight="normal">follower</text>
+  </g>
+  <text x="500" y="345" font-size="18" fill="#cbd5e1" text-anchor="middle">topics · subscriptions · offsets</text>
+  <g text-anchor="middle">
+    <rect x="40" y="200" width="160" height="70" rx="14" fill="#f8fafc"/><text x="120" y="243" font-size="22" font-weight="bold" fill="#0f172a">Publisher</text>
+    <rect x="800" y="200" width="160" height="70" rx="14" fill="#f8fafc"/><text x="880" y="243" font-size="22" font-weight="bold" fill="#0f172a">Subscriber</text>
+  </g>
+  <path d="M200 235 L262 160" stroke="#e2e8f0" stroke-width="3"/><path d="M252 162 L270 150 L266 172z" fill="#e2e8f0"/>
+  <path d="M738 160 L800 235" stroke="#e2e8f0" stroke-width="3"/><path d="M790 236 L808 245 L802 224z" fill="#e2e8f0"/>
+  <text x="880" y="300" font-size="17" fill="#cbd5e1" text-anchor="middle">pull · ack · seek</text>
+  <g font-size="18" text-anchor="middle">
+    <rect x="150" y="400" width="200" height="150" rx="16" fill="#1e293b" stroke="#5eead4" stroke-width="3"/>
+    <rect x="400" y="400" width="200" height="150" rx="16" fill="#1e293b" stroke="#5eead4" stroke-width="3"/>
+    <rect x="650" y="400" width="200" height="150" rx="16" fill="#1e293b" stroke="#5eead4" stroke-width="3"/>
+    <text x="250" y="432" fill="#f8fafc" font-weight="bold">Storage 1</text><text x="500" y="432" fill="#f8fafc" font-weight="bold">Storage 2</text><text x="750" y="432" fill="#f8fafc" font-weight="bold">Storage 3</text>
+    <rect x="175" y="452" width="150" height="34" fill="#14b8a6"/><text x="250" y="475" fill="#0f172a">partition 0</text>
+    <rect x="175" y="496" width="150" height="34" fill="#f8fafc"/><text x="250" y="519" fill="#0f172a">partition 1</text>
+    <rect x="425" y="452" width="150" height="34" fill="#14b8a6"/><text x="500" y="475" fill="#0f172a">partition 0</text>
+    <rect x="425" y="496" width="150" height="34" fill="#f8fafc"/><text x="500" y="519" fill="#0f172a">partition 1</text>
+    <rect x="675" y="452" width="150" height="34" fill="#14b8a6"/><text x="750" y="475" fill="#0f172a">partition 0</text>
+    <rect x="675" y="496" width="150" height="34" fill="#f8fafc"/><text x="750" y="519" fill="#0f172a">partition 1</text>
+  </g>
+  <text x="500" y="600" font-size="26" fill="#e2e8f0" text-anchor="middle">Replicated logs, majority-quorum writes</text>
+</svg>
